@@ -62,7 +62,7 @@ build_prep:
 	mkdir -p $(OUTPUTDIR)
 
 #
-# Rules to link and convert niuboot image
+# Rules to link and convert s-boot image
 # 
 $(NIUBOOT_BIN): $(NIUBOOT_ELF)
 	$(OBJCOPY) -R -S -O binary -R .note -R .note.gnu.build-id -R .comment $< $@
