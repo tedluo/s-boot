@@ -7,12 +7,12 @@ OUTPUTDIR	= $(CURDIR)/output
 
 # Linker script 
 BASE_ADDR	?= 0x00000000
-BOOT_LAYOUT_IN	= $(SRCDIR)/niuboot.ld.in
-BOOT_LAYOUT_OUT	= $(OUTPUTDIR)/niuboot.ld
+BOOT_LAYOUT_IN	= $(SRCDIR)/s-boot.ld.in
+BOOT_LAYOUT_OUT	= $(OUTPUTDIR)/s-boot.ld
 
 # Output ELF/BIN binary image
-NIUBOOT_ELF	= $(OUTPUTDIR)/niuboot
-NIUBOOT_BIN	= $(OUTPUTDIR)/niuboot.bin
+NIUBOOT_ELF	= $(OUTPUTDIR)/s-boot
+NIUBOOT_BIN	= $(OUTPUTDIR)/s-boot.bin
 
 AS	= $(CROSS_COMPILE)as
 CC	= $(CROSS_COMPILE)gcc
